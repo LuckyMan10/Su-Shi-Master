@@ -1,0 +1,307 @@
+.wrapper {
+  width: 100%;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.wrapper .header .logo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .header .logo h2 {
+  border-bottom: 1.5px solid black;
+  margin: 0;
+}
+
+.wrapper .header .logo p {
+  margin: 0;
+}
+
+.wrapper .header .logo img {
+  width: 150px;
+}
+
+.wrapper .content {
+  margin: auto;
+  max-width: 1288px;
+}
+
+.wrapper .content .shopping_basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper .content .shopping_basket .basket_header {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper .content .shopping_basket .basket_header {
+    width: 100%;
+  }
+}
+
+.wrapper .content .shopping_basket .basket_header .basket_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .content .shopping_basket .basket_header .basket_logo img {
+  width: 60px;
+}
+
+.wrapper .content .shopping_basket .basket_header .basket_logo p {
+  padding: 5px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 775px) {
+  .wrapper .content .shopping_basket .basket_header .basket_logo p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .wrapper .content .shopping_basket .basket_header .basket_logo p {
+    font-size: 15px;
+  }
+  .wrapper .content .shopping_basket .basket_header .basket_logo img {
+    width: 35px;
+  }
+}
+
+.wrapper .content .shopping_basket .basket_header .clear_basket {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .content .shopping_basket .basket_header .clear_basket img {
+  width: 40px;
+}
+
+.wrapper .content .shopping_basket .basket_header .clear_basket p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 370px) {
+  .wrapper .content .shopping_basket .basket_header .clear_basket p {
+    font-size: 15px;
+  }
+}
+
+.wrapper .content .orders_element {
+  width: 60%;
+  padding: 15px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper .content .orders_element {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .wrapper .content .orders_element {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5px;
+  }
+}
+
+.wrapper .content .orders_element .delete p {
+  opacity: 0.4;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.wrapper .content .orders_element .img_and_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .content .orders_element .img_and_name img {
+  width: 120px;
+}
+
+.wrapper .content .orders_element .img_and_name p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 775px) {
+  .wrapper .content .orders_element .img_and_name p {
+    font-size: 20px;
+  }
+  .wrapper .content .orders_element .img_and_name img {
+    width: 90px;
+  }
+}
+
+.wrapper .content .orders_element .amounts_orders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .content .orders_element .amounts_orders .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .content .orders_element .amounts_orders .wrapper p {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.wrapper .content .orders_element .amounts_orders .wrapper .plus, .wrapper .content .orders_element .amounts_orders .wrapper .minus {
+  cursor: pointer;
+  color: #f8a25a;
+}
+
+@media screen and (max-width: 775px) {
+  .wrapper .content .orders_element .amounts_orders .wrapper p {
+    font-size: 25px;
+  }
+}
+
+.wrapper .content .orders_element .amounts_orders .summ {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 775px) {
+  .wrapper .content .orders_element .amounts_orders .summ {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .wrapper .content .orders_element .amounts_orders .summ {
+    padding-left: 5px;
+  }
+}
+
+.wrapper .content .orders_element:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .order_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .order_price p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.wrapper .order_price .summ_order {
+  color: #f8a25a;
+}
+
+.wrapper .buttons {
+  margin-top: 10px;
+}
+
+.wrapper .buttons button {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.wrapper .buttons .go_back {
+  border-radius: 9px;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.wrapper .buttons .pay_now {
+  border-radius: 9px;
+  background-color: #f8a25a;
+  padding: 7px;
+  border: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+/*# sourceMappingURL=Su-Shi shopping basket.css.map */

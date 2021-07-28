@@ -1,0 +1,316 @@
+.wrapper {
+    font-family: 'Red Hat Text', sans-serif;
+    width: 100%;
+    .content {
+        margin: auto;
+        max-width: 1288px;
+    }
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        img {
+            width: 150px;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .logo__text {
+            flex-direction: column;
+            h2 {
+                border-bottom: 1.5px solid black;
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        @media screen and (max-width: 580px) {
+            img {
+                width: 75px;
+            }
+
+        }
+        @media screen and (max-width: 400px) {
+            .logo__text {
+                h2 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .pay_summ {
+        display: flex;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        width: 210px;
+        cursor: pointer;
+        .summ_in_dollar {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 50%;
+            align-items: center;
+            background-color: rgba(237, 109, 0, 1);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .number_of_purchases {
+            img {
+                width: 40px;
+            }
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            width: 50%;
+            align-items: center;
+            background-color: rgba(248, 162, 90, 1);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        @media screen and (max-width: 580px) {
+            height: 25px;
+            width: 110px;
+            font-size: 10px;
+            .number_of_purchases {
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+.menu {
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .menu_wrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .all_food, .sets, .big_sets, .rolls, .big_rolls,
+        .salads, .sauces, .drinks{
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 20px;
+            min-width: 80px;
+            p {
+                margin: 6px;
+                
+            }
+            
+        }
+
+        .all_food:hover, .sets:hover, .big_sets:hover,
+        .rolls:hover, .big_rolls:hover, .salads:hover,
+        .sauces:hover, .drinks:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: 0.3s;
+        }
+        
+    }
+    .sort_product {
+        display: flex;
+        align-items: center;
+        .sort {
+            cursor: pointer;
+            color:rgba(237, 109, 0, 1);
+            border-bottom: 2px solid rgba(237, 109, 0, 1);
+        }
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .menu {
+        .menu_wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }    
+}
+
+.sets__header {
+    font-size: 26px;
+}
+.sets, .big_sets, .rolls, .big_rolls, .salads, .sauces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sets__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+        @media screen and (max-width: 1234px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        @media screen and (max-width: 580px) {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+    .sets__wrapper.rolls {
+        grid-template-columns: repeat(3, 1fr);
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 700px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .sets__content.rolls {
+        border-radius: 0;
+        padding: 0;
+        padding-bottom: 10px;
+        display: flex;
+        width: 310px;
+        @media screen and (max-width: 334px) {
+            max-width: 260px;
+        }
+        margin: 15px;
+    }
+
+    .set_name.rolls {
+        font-size: 30px;
+        margin: 0;
+    }
+    .rolls_info {
+        margin: 0;
+        font-weight: 500;
+        color:rgba(0, 0, 0, 0.5)
+    }
+    .img.roll {
+        max-width: 310px;
+        max-height: 210px;
+        @media screen and (max-width: 334px) {
+            max-width: 260px;
+        
+        }
+    }
+
+    .sets__content {
+        padding: 15px;
+        border-radius: 8px;
+        .element {
+            text-align: center;
+            .set_name {
+            font-weight: bold;
+            margin: 0;
+            }
+            .information{
+                font-weight: 500;
+                display: flex;
+                flex-direction: column;
+                .pcs_gramm{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size: 15px;
+                    .pcs{
+                        padding: 6px;
+                        color: rgba(0, 0, 0, 0.4);
+                        border: 2px solid rgba(0, 0, 0, 0.4);
+                        border-radius: 8px;
+                    }
+                    .gramm{
+                        padding: 8px;
+                        color: rgba(0, 0, 0, 0.7);
+                        background-color:rgba(0, 0, 0, 0.3);
+                        border-radius: 8px;
+                    }
+                }
+                .price_btnAdd{
+                    p {
+                        font-weight: bold;
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                    button {
+                        cursor: pointer;
+                        color: white;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: rgba(237, 109, 0, 1);
+                        font-weight: bold;
+                        font-size: 25px;
+                    }
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+    .sets__content:hover {
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        transition: 0.3s;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .logo {
+        img {
+            width: 120px;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .logo__text {
+            flex-direction: column;
+            h2 {
+                border-bottom: 1.5px solid black;
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        @media screen and (max-width: 580px) {
+            img {
+                width: 75px;
+            }
+
+        }
+        @media screen and (max-width: 400px) {
+            .logo__text {
+                h2 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,492 @@
+.wrapper {
+  font-family: 'Red Hat Text', sans-serif;
+  width: 100%;
+}
+
+.wrapper .content {
+  margin: auto;
+  max-width: 1288px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+.header .logo .logo__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .logo .logo__text h2 {
+  border-bottom: 1.5px solid black;
+  margin: 0;
+}
+
+.header .logo .logo__text p {
+  margin: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .header .logo img {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .logo .logo__text h2 {
+    font-size: 15px;
+  }
+  .header .logo .logo__text p {
+    font-size: 10px;
+  }
+}
+
+.header .pay_summ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 210px;
+  cursor: pointer;
+}
+
+.header .pay_summ .summ_in_dollar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ed6d00;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.header .pay_summ .number_of_purchases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8a25a;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.header .pay_summ .number_of_purchases img {
+  width: 40px;
+}
+
+@media screen and (max-width: 580px) {
+  .header .pay_summ {
+    height: 25px;
+    width: 110px;
+    font-size: 10px;
+  }
+  .header .pay_summ .number_of_purchases img {
+    width: 20px;
+  }
+}
+
+.menu {
+  width: 100%;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menu .menu_wrapper {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .menu_wrapper .all_food, .menu .menu_wrapper .sets, .menu .menu_wrapper .big_sets, .menu .menu_wrapper .rolls, .menu .menu_wrapper .big_rolls,
+.menu .menu_wrapper .salads, .menu .menu_wrapper .sauces, .menu .menu_wrapper .drinks {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+  min-width: 80px;
+}
+
+.menu .menu_wrapper .all_food p, .menu .menu_wrapper .sets p, .menu .menu_wrapper .big_sets p, .menu .menu_wrapper .rolls p, .menu .menu_wrapper .big_rolls p,
+.menu .menu_wrapper .salads p, .menu .menu_wrapper .sauces p, .menu .menu_wrapper .drinks p {
+  margin: 6px;
+}
+
+.menu .menu_wrapper .all_food:hover, .menu .menu_wrapper .sets:hover, .menu .menu_wrapper .big_sets:hover,
+.menu .menu_wrapper .rolls:hover, .menu .menu_wrapper .big_rolls:hover, .menu .menu_wrapper .salads:hover,
+.menu .menu_wrapper .sauces:hover, .menu .menu_wrapper .drinks:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu .sort_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .sort_product .sort {
+  cursor: pointer;
+  color: #ed6d00;
+  border-bottom: 2px solid #ed6d00;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu .menu_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sets__header {
+  font-size: 26px;
+}
+
+.sets, .big_sets, .rolls, .big_rolls, .salads, .sauces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sets .sets__wrapper, .big_sets .sets__wrapper, .rolls .sets__wrapper, .big_rolls .sets__wrapper, .salads .sets__wrapper, .sauces .sets__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+@media screen and (max-width: 1234px) {
+  .sets .sets__wrapper, .big_sets .sets__wrapper, .rolls .sets__wrapper, .big_rolls .sets__wrapper, .salads .sets__wrapper, .sauces .sets__wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sets .sets__wrapper, .big_sets .sets__wrapper, .rolls .sets__wrapper, .big_rolls .sets__wrapper, .salads .sets__wrapper, .sauces .sets__wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .sets .sets__wrapper, .big_sets .sets__wrapper, .rolls .sets__wrapper, .big_rolls .sets__wrapper, .salads .sets__wrapper, .sauces .sets__wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.sets .sets__wrapper.rolls, .big_sets .sets__wrapper.rolls, .rolls .sets__wrapper.rolls, .big_rolls .sets__wrapper.rolls, .salads .sets__wrapper.rolls, .sauces .sets__wrapper.rolls {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+  .sets .sets__wrapper.rolls, .big_sets .sets__wrapper.rolls, .rolls .sets__wrapper.rolls, .big_rolls .sets__wrapper.rolls, .salads .sets__wrapper.rolls, .sauces .sets__wrapper.rolls {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sets .sets__wrapper.rolls, .big_sets .sets__wrapper.rolls, .rolls .sets__wrapper.rolls, .big_rolls .sets__wrapper.rolls, .salads .sets__wrapper.rolls, .sauces .sets__wrapper.rolls {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.sets .sets__content.rolls, .big_sets .sets__content.rolls, .rolls .sets__content.rolls, .big_rolls .sets__content.rolls, .salads .sets__content.rolls, .sauces .sets__content.rolls {
+  border-radius: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 310px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 334px) {
+  .sets .sets__content.rolls, .big_sets .sets__content.rolls, .rolls .sets__content.rolls, .big_rolls .sets__content.rolls, .salads .sets__content.rolls, .sauces .sets__content.rolls {
+    max-width: 260px;
+  }
+}
+
+.sets .set_name.rolls, .big_sets .set_name.rolls, .rolls .set_name.rolls, .big_rolls .set_name.rolls, .salads .set_name.rolls, .sauces .set_name.rolls {
+  font-size: 30px;
+  margin: 0;
+}
+
+.sets .rolls_info, .big_sets .rolls_info, .rolls .rolls_info, .big_rolls .rolls_info, .salads .rolls_info, .sauces .rolls_info {
+  margin: 0;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sets .img.roll, .big_sets .img.roll, .rolls .img.roll, .big_rolls .img.roll, .salads .img.roll, .sauces .img.roll {
+  max-width: 310px;
+  max-height: 210px;
+}
+
+@media screen and (max-width: 334px) {
+  .sets .img.roll, .big_sets .img.roll, .rolls .img.roll, .big_rolls .img.roll, .salads .img.roll, .sauces .img.roll {
+    max-width: 260px;
+  }
+}
+
+.sets .sets__content, .big_sets .sets__content, .rolls .sets__content, .big_rolls .sets__content, .salads .sets__content, .sauces .sets__content {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.sets .sets__content .element, .big_sets .sets__content .element, .rolls .sets__content .element, .big_rolls .sets__content .element, .salads .sets__content .element, .sauces .sets__content .element {
+  text-align: center;
+}
+
+.sets .sets__content .element .set_name, .big_sets .sets__content .element .set_name, .rolls .sets__content .element .set_name, .big_rolls .sets__content .element .set_name, .salads .sets__content .element .set_name, .sauces .sets__content .element .set_name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.sets .sets__content .element .information, .big_sets .sets__content .element .information, .rolls .sets__content .element .information, .big_rolls .sets__content .element .information, .salads .sets__content .element .information, .sauces .sets__content .element .information {
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sets .sets__content .element .information .pcs_gramm, .big_sets .sets__content .element .information .pcs_gramm, .rolls .sets__content .element .information .pcs_gramm, .big_rolls .sets__content .element .information .pcs_gramm, .salads .sets__content .element .information .pcs_gramm, .sauces .sets__content .element .information .pcs_gramm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+.sets .sets__content .element .information .pcs_gramm .pcs, .big_sets .sets__content .element .information .pcs_gramm .pcs, .rolls .sets__content .element .information .pcs_gramm .pcs, .big_rolls .sets__content .element .information .pcs_gramm .pcs, .salads .sets__content .element .information .pcs_gramm .pcs, .sauces .sets__content .element .information .pcs_gramm .pcs {
+  padding: 6px;
+  color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.sets .sets__content .element .information .pcs_gramm .gramm, .big_sets .sets__content .element .information .pcs_gramm .gramm, .rolls .sets__content .element .information .pcs_gramm .gramm, .big_rolls .sets__content .element .information .pcs_gramm .gramm, .salads .sets__content .element .information .pcs_gramm .gramm, .sauces .sets__content .element .information .pcs_gramm .gramm {
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.sets .sets__content .element .information .price_btnAdd, .big_sets .sets__content .element .information .price_btnAdd, .rolls .sets__content .element .information .price_btnAdd, .big_rolls .sets__content .element .information .price_btnAdd, .salads .sets__content .element .information .price_btnAdd, .sauces .sets__content .element .information .price_btnAdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sets .sets__content .element .information .price_btnAdd p, .big_sets .sets__content .element .information .price_btnAdd p, .rolls .sets__content .element .information .price_btnAdd p, .big_rolls .sets__content .element .information .price_btnAdd p, .salads .sets__content .element .information .price_btnAdd p, .sauces .sets__content .element .information .price_btnAdd p {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.sets .sets__content .element .information .price_btnAdd button, .big_sets .sets__content .element .information .price_btnAdd button, .rolls .sets__content .element .information .price_btnAdd button, .big_rolls .sets__content .element .information .price_btnAdd button, .salads .sets__content .element .information .price_btnAdd button, .sauces .sets__content .element .information .price_btnAdd button {
+  cursor: pointer;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ed6d00;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.sets .sets__content:hover, .big_sets .sets__content:hover, .rolls .sets__content:hover, .big_rolls .sets__content:hover, .salads .sets__content:hover, .sauces .sets__content:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .logo img {
+  width: 120px;
+}
+
+.footer .logo .logo__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .logo .logo__text h2 {
+  border-bottom: 1.5px solid black;
+  margin: 0;
+}
+
+.footer .logo .logo__text p {
+  margin: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .footer .logo img {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer .logo .logo__text h2 {
+    font-size: 15px;
+  }
+  .footer .logo .logo__text p {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=allFood.css.map */

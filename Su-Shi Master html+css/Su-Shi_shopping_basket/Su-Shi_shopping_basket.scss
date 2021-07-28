@@ -1,0 +1,205 @@
+
+.wrapper {
+    width: 100%;
+
+    font-family: 'Red Hat Text', sans-serif;
+    .header {
+        .logo {
+            flex-direction: column;
+            h2 {
+                border-bottom: 1.5px solid black;
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+            img {
+                width: 150px;
+            }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .content {
+        margin: auto;
+        max-width: 1288px;
+
+        .shopping_basket {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .basket_header {
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+                @media screen and (max-width: 640px) {
+                    width: 100%;
+                }
+                .basket_logo {
+                    img {
+                        width: 60px;
+                    }
+                    p {
+                        padding: 5px;
+                        font-size: 40px;
+                        font-weight: 500;
+                    }
+                    @media screen and (max-width: 775px) {
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                    @media screen and (max-width: 360px) {
+                        p {
+                            font-size: 15px;
+                        }
+                        img {
+                            width: 35px;
+                        }
+                    }
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                }
+                .clear_basket {
+                    cursor: pointer;
+                    img {
+                        width: 40px;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    @media screen and (max-width: 370px) {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .orders_element {
+            width: 60%;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media screen and (max-width: 640px) {
+                width: 80%;
+            }
+            @media screen and (max-width: 465px) {
+                width: 100%;
+                justify-content: space-around;
+                padding: 5px;
+            }
+            .delete {
+                p {
+                    opacity: 0.4;
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+            }
+            display: flex;
+            .img_and_name {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 120px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                @media screen and (max-width: 775px) {
+                    p {
+                        font-size: 20px;
+                    }
+                    img {
+                        width: 90px;
+                    }
+                }
+            }
+            .amounts_orders {
+                display: flex;
+                align-items: center;
+                .wrapper {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin: 0;
+                        font-size: 35px;
+                        font-weight: 500;
+                    }
+                    .plus, .minus {
+                        cursor: pointer;
+                        color: rgba(248, 162, 90, 1);
+                    }
+                    @media screen and (max-width: 775px) {
+                        p {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .summ {
+                    padding-left: 20px;
+                    margin: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+                    @media screen and (max-width: 775px) {
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: 370px){
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+        .orders_element:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: 0.3s;
+        }
+    }
+    .order_price {
+        display: flex;
+        p {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .summ_order {
+            color: rgba(248, 162, 90, 1);
+        }
+    }
+    .buttons {
+        margin-top: 10px;
+        button {
+            cursor: pointer;
+            margin: 10px;
+        }
+        .go_back {
+            border-radius: 9px;
+            background-color: transparent;
+            padding: 5px;
+            font-size: 30px;
+            font-weight: 500;
+            border: 2px solid rgba(0, 0, 0, 0.35);
+            color: rgba(0, 0, 0, 0.35);
+        }
+        .pay_now {
+            border-radius: 9px;
+            background-color: rgba(248, 162, 90, 1);
+            padding: 7px;
+            border: none;
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
